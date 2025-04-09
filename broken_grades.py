@@ -25,7 +25,7 @@ exam_two = input("Input exam grade two: "))
 
 exam_3 = str(input("Input exam grade three: "))
 
-grades = [exam_one, exam_two, exam_three]
+grades = [exam_one, exam_two, exam_three] #Stevy added commas 
 sum = 0
 for grade in grade:
   sum = sum + grade
@@ -34,13 +34,13 @@ avg = sum / len(grdes)
 
 if avg >= 90:
     letter_grade = "A"
-elif avg >= 80 and avg < 90:
+elif avg >= 80 and avg < 90: #stevy added :
     letter_grade = "B"
 elif avg > 69 and avg < 80:
-    letter_grade = "C"
+    letter_grade = "C"   # stevy added the right ''
 elif avg <= 69 and avg >= 65:
     letter_grade = "D"
-else:
+else:     # stevy remplaces elif by else
     letter_grade = "F"
 
 for grade in grades:
@@ -50,7 +50,7 @@ for grade in grades:
 
     print("Grade: " + letter_grade)
 
-if letter_grade is "F":
+if letter_grade is "F":    # stevy remplace - by _
     print "Student is failing."
 else:
     print "Student is passing."
