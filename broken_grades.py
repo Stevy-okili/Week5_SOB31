@@ -21,16 +21,16 @@
 
 exam_one = int(input("Input exam grade one: "))
 
-exam_two = input("Input exam grade two: "))
+exam_two = int(input("Input exam grade two: ")) #stevy added int
 
-exam_3 = str(input("Input exam grade three: "))
+exam_3 = int(input("Input exam grade three: ")) # stevy remplace str by int
 
 grades = [exam_one, exam_two, exam_three] #Stevy added commas 
 sum = 0
-for grade in grade:
-  sum = sum + grade
+for grade in grades: #stevy added s to grade
+  sum = sum + grade 
 
-avg = sum / len(grdes)
+avg = sum / len(grades) #stevy remplaces grde by grades
 
 if avg >= 90:
     letter_grade = "A"
